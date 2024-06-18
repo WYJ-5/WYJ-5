@@ -1,0 +1,139 @@
+@charset "utf-8";
+
+/*視窗背景色設定*/
+body{
+    background-image: url(../img/dog.png);
+    background-color: #bbbbbb;
+    background-repeat: repeat;
+    background-size: 300px;
+    background-attachment: fixed;
+}
+
+/*連結顏色設定*/
+a{
+    color: rgb(228, 26, 211);
+}
+
+/*設定版面區塊且置中*/
+#contents{
+    width: 980px;
+    margin: 0 auto;
+    background-color: rgba(243, 228, 206, 0.8);
+    padding: 40px 80px;
+    border: 1px solid #000;
+
+}
+
+/*頁首,導覽,頁尾的共通設定*/
+
+
+/*導覽樣式設定*/
+.menu li{
+    list-style-type: none;
+    background-color: #fbf9cc;
+    display: inline-block;
+    width: 120px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 2px #e7e16a ;
+    border: 1px solid #ffd0ab ;
+    border-radius: 10px;
+    margin: 0px 10px;
+}
+
+.menu a {
+    display: inline-block;
+    background-color: #fbf9cc;
+    color: rgb(228, 26, 211);
+    padding: 10px;
+    width: 100px;
+    border-radius: 10px;
+    text-decoration: none;
+    
+}
+
+.menu a:hover {
+    background-color: #e7e16a;
+    color: #f52404;   
+}
+
+/*頁面標題設定*/
+h1{
+    background-color: rgb(83, 156, 144);
+    color:#fff;
+    width: 50% ;
+    padding: 20px ;
+    margin: 40px auto ;
+    text-align:center;
+    font-size: 2em;
+    border: #fff solid 5px;
+    line-height: 1;
+    border-radius: 50%;
+    box-shadow: #000 10px 10px 10px;
+    text-shadow: 5px 5px 5px #000;
+}
+
+/*次標題設定*/
+h2{
+    color:rgb(83, 156, 144);
+    width: 50% ;
+    padding: 10px ;
+    margin-bottom: 30px  ;
+    font-size: 2em;
+    border: #fff dotted 1px;
+    border-left: #fff solid 8px;
+    
+}
+
+
+/*小標題設定*/
+.h-sub{
+    padding: 10px;
+    background-color: #fbf9cc;
+    color: #ff705b;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 2px #ffd0ab inset;
+}
+
+/*內容區塊邊框設定*/
+
+
+/*「更多介紹」連結設定*/
+
+
+/*連結圖示設定*/
+
+
+/*區塊間分隔*/
+
+
+/*文繞圖設定*/
+.imgL{
+    float: left;
+    margin-right: 20px;
+}
+.imgR{
+    float: right;
+    margin-left: 20px;
+}
+.clear{
+    clear: both;
+}
+
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.img-round{
+    border-radius: 50%;
+}
+
+/*圓形圖片設定*/
+
+/*寵物相片設定*/
+.photo{
+    width: 450px;
+    height: 300px;
+}
+

@@ -1,0 +1,120 @@
+body{
+    background-image: url(../img/dog.png);
+    background-color: #bbbbbb;
+    background-repeat: repeat;
+    background-size: 300px;
+    background-attachment: fixed;
+}
+
+#container{
+    width: 980px;
+    margin: 0 auto;
+    background-color: rgba(243, 228, 206, 0.8);
+    padding: 40px 80px;
+    border: 1px solid #000;
+
+}
+
+.highlight {
+    font-size: 2em;  
+    color: #518a74; 
+}
+
+.circular-image {
+    width: 300px;         
+    height: 300px;        
+    border-radius: 50%;  
+    border: 5px solid ; 
+    border-color: white;
+    box-sizing: border-box; 
+    box-shadow: 10px 10px 20px rgba(0,0,0,0.5); 
+}
+
+.names-container {
+    display: flex;      
+    align-items:center; 
+    margin: 20px;        
+    margin-right: 200px;
+    margin-top: 30px;
+}
+
+align-items
+
+h1, h2 {
+    margin: 0;  
+    padding: 10px;
+}
+
+.imgL{
+    float: left;
+    margin-right: 20px;
+    margin:30PX;
+}
+
+.imgR{
+    float: right;
+    margin-left: 20px;
+}
+
+.clear{
+    clear: both;
+}
+
+a{
+    color: rgb(228, 26, 211);
+}
+
+.h-sub{
+    padding: 10px;
+    background-color: #fbf9cc;
+    color: #ff705b;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 2px #ffd0ab inset;
+}
+
+div {
+    letter-spacing: normal;
+  }
+
+p {
+    text-shadow: 2px 2px 2px rgba(20, 18, 22, 0.5); 
+}
+
+.menu li{
+    list-style-type: none;
+    background-color: #fbf9cc;
+    display: inline-block;
+    width: 120px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 2px #e7e16a ;
+    border: 1px solid #ffd0ab ;
+    border-radius: 10px;
+    margin: 0px 10px;
+    
+}
+
+.menu a {
+    display: inline-block;
+    background-color: #fbf9cc;
+    color: rgb(228, 26, 211);
+    padding: 10px;
+    width: 100px;
+    border-radius: 10px;
+    text-decoration: none;
+    
+}
+
+.menu a:hover {
+    background-color: #e7e16a;
+    color: #f52404;   
+}
+
+.pretty{
+    color:#ff705b;
+    padding: 10px ;
+    margin-bottom: 30px  ;
+    border: #ffffff  dotted 1px;
+    border-left: #fffffa  solid 8px;
+    
+}
