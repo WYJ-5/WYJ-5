@@ -1,0 +1,323 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Fira+Sans+Extra+Condensed:ital,wght@1,700&family=Philosopher:wght@700&display=swap");
+body {
+  margin: 0;
+  font-family: "Noto sans TC", sans-serif;
+  letter-spacing: 1px;
+  color: #333;
+  line-height: 1.4;
+  background-color: #e5f1f5;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.wrapper-content {
+  box-sizing: border-box;
+  position: relative;
+  width: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1023px) {
+  .wrapper-content {
+    max-width: auto;
+  }
+}
+
+header,
+.section-primary,
+footer {
+  background-color: #D9D9D9;
+}
+
+.header-content {
+  width: 100%;
+  background-color: #f8e5e0;
+  height: 70px;
+  padding-left: 30px;
+  padding-right: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-family: "Fira Sans Extra Condensed", sans-serif;
+  color: #000;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+.header-nav {
+  width: 330px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.link-text {
+  letter-spacing: 3px;
+}
+
+.link-text:hover {
+  transition: all 0.2s;
+  color: #ffb500;
+}
+
+@media screen and (max-width: 767px) {
+  /* header {
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+  } */
+
+  .header-content {
+    transition: background-color 0.2s;
+  }
+
+  .wrapper-hamburger {
+    height: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+  }
+
+  .cross-button {
+    width: 30px;
+    height: 3px;
+    background-color: #333;
+    transition: all 0.2s;
+  }
+
+  .header-nav {
+    display: none;
+  }
+
+  .header-content_active {
+    background-color: #333;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: flex-start;
+    align-items: center;
+    padding-bottom: 20px;
+  }
+
+  .header-content_active .header-nav {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20vh;
+  }
+
+  .header-content_active .logo {
+    color: white;
+  }
+
+  .header-content_active .link-text {
+    color: white;
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
+
+  .header-content_active .wrapper-hamburger {
+    height: 30px;
+    justify-content: center;
+  }
+
+  .header-content_active .cross-button {
+    background-color: white;
+  }
+
+  .header-content_active .cross-button-top {
+    transform: rotate(45deg) translateY(2px);
+  }
+
+  .header-content_active .cross-button-bottom {
+    transform: rotate(-45deg) translateY(-2px);
+  }
+}
+/*作品集內容*/
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* 水平居中对齐 */
+}
+
+ul {
+  flex: 1 1 calc(33.33% - 40px); /* 每个ul元素占据33.33%宽度，减去左右20px的margin */
+  margin: 20px;
+  padding: 0;
+  list-style-type: none;
+  text-align: center; /* 文字居中 */
+}
+
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+  ul {
+    flex: 1 1 calc(50% - 40px); /* 在中等屏幕上，每个ul元素占据50%宽度 */
+  }
+}
+
+@media screen and (max-width: 767px) {
+  ul {
+    flex: 1 1 calc(100% - 40px); /* 在小屏幕上，每个ul元素占据100%宽度 */
+  }
+}
+
+
+
+
+
+
+.centered {
+    margin-top: 100px;
+    margin-left: 20px;
+    a {
+        text-decoration: none;
+        /* 移除超連結的底線 */
+        color: #ce5c60;
+    }
+    a:hover {
+        color: #48b348; /* 滑鼠滑過時超連結的顏色 */
+    }
+    
+    a:visited {
+        color: #cc2fcc; /* 點擊過後超連結的顏色 */
+    }
+
+}
+
+.menu {
+    margin-top: 50px;
+    margin-left: 20px;
+    padding-left: 0;
+    list-style-type: none; 
+    text-align: center;
+    a {
+        text-decoration: none;
+        /* 移除超連結的底線 */
+        color: #ce5c60;
+    }
+    a:hover {
+        color: #48b348; /* 滑鼠滑過時超連結的顏色 */
+    }
+    
+    a:visited {
+        color: #cc2fcc; /* 點擊過後超連結的顏色 */
+    }
+}
+
+
+.menu li p {
+  margin-bottom: 5px; /* 调整段落与列表项之间的间距 */
+}
+
+
+/* footer 相關 */
+
+.logo {
+    font-family: "Fira Sans Extra Condensed", sans-serif;
+    color: #000;
+    font-size: 24px;
+    text-decoration: none;
+  }
+
+.wrapper-content {
+    box-sizing: border-box;
+    position: relative;
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+  }
+
+.link-text {
+    letter-spacing: 3px;
+  }
+
+  a {
+    text-decoration: none;
+    color: #000;
+  }
+
+/* footer */
+footer {
+  margin-top: 100px;
+  width: 100%;
+  background-color: #f2d5d7;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.footer-content {
+  
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-content > div {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0 15px;
+  }
+  
+  .footer-nav-list {
+    color: #000;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .footer__license {
+    margin-top: 10px;
+  }
+  
+  .footer-nav-list__title {
+    font-weight: bold;
+    margin-bottom: 15px;
+    letter-spacing: 3px;
+  }
+  
+  .footer-nav-list__text {
+    margin-bottom: 15px;
+  }
+  
+  @media screen and (max-width: 1023px) and (min-width: 768px) {
+    .footer-content {
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+  
+    .footer-content > div {
+      flex: 1 1 30%;
+      margin: 10px;
+    }
+  }
+  
+  @media screen and (max-width: 767px) {
+    .footer-content {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .footer-content > div {
+      width: 100%;
+      align-items: center;
+      margin: 10px 0;
+    }
+  
+    .footer-nav-list {
+      align-items: center;
+    }
+  }
+  
+  
